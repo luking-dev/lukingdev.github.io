@@ -69,7 +69,7 @@ header table {
     color:#fff;
     transition:0.4s ease-in-out;
 }
-#magnify h1:hover{
+#magnify h1:hover {
     color:rgb(255, 44, 90);
     cursor:pointer;
 }
@@ -95,14 +95,14 @@ header table {
     margin-left:4vw;
     transition:0.4s ease-in-out;
 }
-#navigation a:hover{
+#navigation a:hover {
     border-bottom:2px solid #fff;
 }
 #top_part {
     width:100%;
     border:2vh solid #fff;
 }
-#top_part tr td{
+#top_part tr td {
     width:50%;
 }
 #about {
@@ -112,7 +112,7 @@ header table {
     flex-direction:column;
     justify-content:center;
     text-align:left;
-    padding:0px 8%;
+    padding: 0px 0px 0px 6%;
 }
 #about h1 {
     font-size:45px;
@@ -196,6 +196,16 @@ header table {
     transform: scale(1.1);
     cursor: pointer;
 }
+div.bio img.skills {
+    transition:0.4s ease-in-out;
+}
+#bio img.skills:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+img.timezone:hover {
+    transition:0.4s ease-in-out;
+}
 #bio {
     width:92vw;
     padding:6vh 4vw;
@@ -221,13 +231,13 @@ header table {
 #contact table tr td {
     width:50%;
 }
-#inner_div table{
+#inner_div table {
     width:100%;
 }
-#inner_div table tr td{
+#inner_div table tr td {
     font-weight:bold;
 }
-#inner_table tr td{
+#inner_table tr td {
     padding:10px 20px !important;
 }
 #contact form {
@@ -304,7 +314,7 @@ button:focus {
     background: rgba(0, 0, 0,0.8); 
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     #photos {
     columns:1;
     column-gap:0%;
@@ -375,7 +385,7 @@ button:focus {
         width:33%;
     }
     header {
-        width:96vw;
+        width: 100%;
         background:#fff;
         padding:4vh 2vw;
         position:absolute;
@@ -389,11 +399,41 @@ button:focus {
     #navigation a {
         color:#000;
     }
-    .bio-avatar {
-        clip-path: circle();
-    }
-    .bio-description {
-        width: 80%;
-        padding-left: 5%;
-    }
+}
+img.bio-avatar {
+    clip-path: circle();
+    width: 100%;
+}
+div img.skills {
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+div#skills img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+img.timezone {
+    width: 100%;
+}
+img.timezone:hover {
+    -webkit-filter: grayscale(50%);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    transition: 0.8s ease-in-out;
+    max-width: 100%;
+}
+div#bio {
+    text-align: justify;
+}
+div#bio p:not(:first-child) {
+    margin-top: 8%;
+}
+div.github {
+    font-size: 2em;
+    text-align: center;
+}
+div.github a {
+    vertical-align: center;
+    color: black;
 }
